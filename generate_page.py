@@ -21,7 +21,7 @@ def generate_body(header, paragraphs):
 		body = body + f"<p>{p}</p>"
 	return f"<body><h1>{body}</h1><hr><a href = about.html> О реализации</a></body>"
 
-def save_page(title, header, paragraphs, output="index.html"):
+def save_page(title, header, paragraphs, output="new_index.html"):
 	fp = open(output, "w", encoding="utf-8")
 	today = dt.now().date()
 	page = generate_page(
